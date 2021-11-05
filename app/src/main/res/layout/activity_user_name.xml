@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserNameActivity"
+    android:orientation="vertical">
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/firstName"
+        android:hint="Enter first name"
+    />
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/lastName"
+        android:hint="Enter last name"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/ActivityFormButton"
+            android:id="@+id/buttonSave"
+            android:text="Save"
+            app:layout_constraintRight_toLeftOf="@id/buttonDiscard"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            style="@style/ActivityFormButton"
+            android:id="@+id/buttonDiscard"
+            android:layout_marginEnd="16dp"
+            android:text="Discard"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
