@@ -11,17 +11,17 @@
     <EditText
         style="@style/EditTextStyle"
         android:id="@+id/country"
-        android:hint="Enter country"/>
+        android:hint="@string/country_input"/>
 
     <EditText
         style="@style/EditTextStyle"
         android:id="@+id/town"
-        android:hint="Enter town"/>
+        android:hint="@string/town_input"/>
 
     <EditText
         style="@style/EditTextStyle"
         android:id="@+id/address"
-        android:hint="Enter address"/>
+        android:hint="@string/address_input"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,20 +34,14 @@
 
         <Button
             android:id="@+id/buttonSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save"
+            style="@style/ActivityFormButton"
+            android:text="@string/save_button"
             app:layout_constraintRight_toLeftOf="@id/buttonDiscard"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <Button
             android:id="@+id/buttonDiscard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="Discard"
-            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/DiscardButtonStyle"
             app:layout_constraintRight_toRightOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -10,13 +10,13 @@
     <EditText
         style="@style/EditTextStyle"
         android:id="@+id/firstName"
-        android:hint="Enter first name"
+        android:hint="@string/first_name_input"
     />
 
     <EditText
         style="@style/EditTextStyle"
         android:id="@+id/lastName"
-        android:hint="Enter last name"/>
+        android:hint="@string/last_name_input"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,16 +30,14 @@
         <Button
             style="@style/ActivityFormButton"
             android:id="@+id/buttonSave"
-            android:text="Save"
+            android:text="@string/save_button"
             app:layout_constraintRight_toLeftOf="@id/buttonDiscard"
             app:layout_constraintLeft_toLeftOf="parent"
             tools:ignore="MissingConstraints" />
 
         <Button
-            style="@style/ActivityFormButton"
+            style="@style/DiscardButtonStyle"
             android:id="@+id/buttonDiscard"
-            android:layout_marginEnd="16dp"
-            android:text="Discard"
             app:layout_constraintRight_toRightOf="parent"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>

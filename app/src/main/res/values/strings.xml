@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">user_data</string>
+    <string name="app_name">User Info</string>
+    <string name="user_name">Name</string>
+    <string name="edit_button">Edit</string>
+    <string name="user_address">Address</string>
+    <string name="user_comments">Comments</string>
+    <string name="country_input">Enter country</string>
+    <string name="town_input">Enter town</string>
+    <string name="address_input">Enter address</string>
+    <string name="save_button">Save</string>
+    <string name="discard_button">Discard</string>
+    <string name="comment_input">Enter comment</string>
+    <string name="last_name_input">Enter last name</string>
+    <string name="first_name_input">Enter first name</string>
 </resources>

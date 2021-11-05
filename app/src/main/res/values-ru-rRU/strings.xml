@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Информация о пользователе</string>
+    <string name="user_name">Имя</string>
+    <string name="edit_button">Изменить</string>
+    <string name="user_address">Адрес</string>
+    <string name="user_comments">Комментарии</string>
+    <string name="country_input">Введите страну</string>
+    <string name="town_input">Введите город</string>
+    <string name="address_input">Введите адрес</string>
+    <string name="save_button">Сохранить</string>
+    <string name="discard_button">Отменить</string>
+    <string name="comment_input">Добавьте комментарий</string>
+    <string name="last_name_input">Введите фамилию</string>
+    <string name="first_name_input">Введите имя</string>
+</resources>
