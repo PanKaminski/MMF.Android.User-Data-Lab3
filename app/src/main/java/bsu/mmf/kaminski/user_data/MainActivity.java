@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -51,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                             if (addressString != null && !addressString.isEmpty()) {
+                                if (addressString.length() > 20){
+                                    address.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+                                }
+                                else if (addressString.length() > 12){
+                                    address.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24);
+                                }
+
                                 address.setText(addressString);
                             }
 

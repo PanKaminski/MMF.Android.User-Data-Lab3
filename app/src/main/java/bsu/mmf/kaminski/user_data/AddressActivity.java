@@ -32,7 +32,7 @@ public class AddressActivity extends AppCompatActivity {
                 String country = AddressActivity.this.country.getText().toString();
                 String town = AddressActivity.this.town.getText().toString();
                 String address = AddressActivity.this.address.getText().toString();
-                returnIntent.putExtra("ADDRESS_TEXT", country + ", " + town + ", " + ", " + address);
+                returnIntent.putExtra("ADDRESS_TEXT", country + ", " + town + ", " + address);
                 AddressActivity.this.setResult(Activity.RESULT_OK, returnIntent);
                 AddressActivity.this.finish();
             }
