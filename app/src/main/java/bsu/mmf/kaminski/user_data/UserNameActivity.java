@@ -54,7 +54,7 @@ public class UserNameActivity extends AppCompatActivity {
 
         String currentName = extras.getString("NAME_TEXT");
 
-        if (currentName != null && !currentName.isEmpty() && !currentName.equals("Name")){
+        if (currentName != null && !currentName.isEmpty() && !currentName.equals(R.string.user_name)){
             String[] nameInfo = currentName.split(" ");
             if (nameInfo.length > 1) {
                 this.lastName.setText(nameInfo[1]);

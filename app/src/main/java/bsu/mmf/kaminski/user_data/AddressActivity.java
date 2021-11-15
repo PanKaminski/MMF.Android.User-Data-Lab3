@@ -58,7 +58,7 @@ public class AddressActivity extends AppCompatActivity {
 
         String currentAddress = extras.getString("ADDRESS_TEXT");
 
-        if (currentAddress != null && !currentAddress.isEmpty() && !currentAddress.equals("Address")){
+        if (currentAddress != null && !currentAddress.isEmpty() && !currentAddress.equals(R.string.user_address)){
             String[] addressInfo = currentAddress.split(", ", 3);
 
             switch (addressInfo.length){
