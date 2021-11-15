@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class UserNameActivity extends AppCompatActivity {
+public class UserNameActivity extends UserActivityBase {
 
     private Button save;
     private Button discard;
@@ -54,7 +54,8 @@ public class UserNameActivity extends AppCompatActivity {
 
         String currentName = extras.getString("NAME_TEXT");
 
-        if (currentName != null && !currentName.isEmpty() && !currentName.equals(R.string.user_name)){
+        if (currentName != null && !currentName.isEmpty()
+                && !currentName.equals(getString(R.string.user_name))){
             String[] nameInfo = currentName.split(" ");
             if (nameInfo.length > 1) {
                 this.lastName.setText(nameInfo[1]);

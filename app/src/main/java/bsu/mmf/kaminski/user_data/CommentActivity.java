@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends UserActivityBase {
 
     private Button save;
     private Button discard;
@@ -49,7 +49,8 @@ public class CommentActivity extends AppCompatActivity {
 
         String currentComment = extras.getString("COMMENT_TEXT");
 
-        if (currentComment != null && !currentComment.isEmpty() && !currentComment.equals("Comments")){
+        if (currentComment != null && !currentComment.isEmpty()
+                && !currentComment.equals(getString(R.string.user_comments))){
             this.comment.setText(currentComment);
         }
     }

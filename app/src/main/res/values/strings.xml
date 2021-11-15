@@ -9,6 +9,8 @@
     <string name="address_input">Enter address</string>
     <string name="save_button">Save</string>
     <string name="discard_button">Discard</string>
+    <string name="cancel_item">Cancel</string>
+    <string name="exit_item">Exit</string>
     <string name="comment_input">Enter comment</string>
     <string name="last_name_input">Enter last name</string>
     <string name="first_name_input">Enter first name</string>

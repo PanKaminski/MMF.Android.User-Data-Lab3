@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class AddressActivity extends AppCompatActivity {
+public class AddressActivity extends UserActivityBase {
 
     private Button save;
     private Button discard;
@@ -58,7 +58,8 @@ public class AddressActivity extends AppCompatActivity {
 
         String currentAddress = extras.getString("ADDRESS_TEXT");
 
-        if (currentAddress != null && !currentAddress.isEmpty() && !currentAddress.equals(R.string.user_address)){
+        if (currentAddress != null && !currentAddress.isEmpty()
+                && !currentAddress.equals(getString(R.string.user_address))){
             String[] addressInfo = currentAddress.split(", ", 3);
 
             switch (addressInfo.length){
