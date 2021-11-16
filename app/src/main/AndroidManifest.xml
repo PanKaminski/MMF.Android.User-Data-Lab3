@@ -16,7 +16,7 @@
             android:name=".AddressActivity"
             android:exported="true" />
         <activity
-            android:name=".UserNameActivity"
+            android:name=".NameActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

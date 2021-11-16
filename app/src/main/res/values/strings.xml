@@ -14,4 +14,8 @@
     <string name="comment_input">Enter comment</string>
     <string name="last_name_input">Enter last name</string>
     <string name="first_name_input">Enter first name</string>
-</resources>
+    <string name="cancel_confirmation">Are you sure you want to discard changes?</string>
+    <string name="exit_confirmation">Are you sure you want to exit application?</string>
+    <string name="select_decision_positive">Ok</string>
+    <string name="select_decision_negative">No</string>
+\</resources>

@@ -4,7 +4,6 @@ import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends UserActivityBase {
     private TextView name;
     private TextView address;
     private TextView comment;
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.editNameButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UserNameActivity.class);
+                Intent intent = new Intent(MainActivity.this, NameActivity.class);
                 intent.putExtra("NAME_TEXT", name.getText());
                 someActivityResultLauncher.launch(intent);
             }

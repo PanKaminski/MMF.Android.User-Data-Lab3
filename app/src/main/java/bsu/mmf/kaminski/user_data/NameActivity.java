@@ -1,7 +1,5 @@
 package bsu.mmf.kaminski.user_data;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class UserNameActivity extends UserActivityBase {
+public class NameActivity extends UserActivityBase {
 
     private Button save;
     private Button discard;
@@ -26,20 +24,20 @@ public class UserNameActivity extends UserActivityBase {
         this.save.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent returnIntent = new Intent();
-                String firstName = UserNameActivity.this.firstName.getText().toString();
-                String lastName = UserNameActivity.this.lastName.getText().toString();
+                String firstName = NameActivity.this.firstName.getText().toString();
+                String lastName = NameActivity.this.lastName.getText().toString();
 
                 returnIntent.putExtra("NAME_TEXT", firstName + " " + lastName);
-                UserNameActivity.this.setResult(Activity.RESULT_OK, returnIntent);
-                UserNameActivity.this.finish();
+                NameActivity.this.setResult(Activity.RESULT_OK, returnIntent);
+                NameActivity.this.finish();
             }
         });
 
         this.discard.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent returnIntent = new Intent();
-                UserNameActivity.this.setResult(Activity.RESULT_CANCELED, returnIntent);
-                UserNameActivity.this.finish();
+                NameActivity.this.setResult(Activity.RESULT_CANCELED, returnIntent);
+                NameActivity.this.finish();
             }
         });
     }

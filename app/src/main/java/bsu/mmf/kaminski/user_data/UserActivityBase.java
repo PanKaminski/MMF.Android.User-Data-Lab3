@@ -10,6 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class UserActivityBase extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        String activityType =  this.getClass().getSimpleName();
+
+        String message = activityType.equals(MainActivity.class.getSimpleName()) ?
+                getString(R.string.exit_item) : getString(R.string.cancel_item);
 
         super.onCreateOptionsMenu(menu);
         menu.add(0, 1, 0, R.string.cancel_item);
@@ -20,9 +24,8 @@ public class UserActivityBase extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == 1){
-            Intent returnIntent = new Intent();
-            UserActivityBase.this.setResult(Activity.RESULT_CANCELED, returnIntent);
-            UserActivityBase.this.finish();
+            CancelDialogFragment dialog = new CancelDialogFragment();
+            dialog.show(getSupportFragmentManager(), "edit");
         }
         return super.onOptionsItemSelected(item);
     }
