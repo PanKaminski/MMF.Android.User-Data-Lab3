@@ -12,11 +12,11 @@ public class UserActivityBase extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         String activityType =  this.getClass().getSimpleName();
 
-        String message = activityType.equals(MainActivity.class.getSimpleName()) ?
+        String name = activityType.equals(MainActivity.class.getSimpleName()) ?
                 getString(R.string.exit_item) : getString(R.string.cancel_item);
 
         super.onCreateOptionsMenu(menu);
-        menu.add(0, 1, 0, R.string.cancel_item);
+        menu.add(0, 1, 0, name);
         return true;
     }
 
